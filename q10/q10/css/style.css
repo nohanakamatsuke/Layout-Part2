@@ -1,1 +1,100 @@
 @charset "UTF-8";
+
+.button{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 50px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-flat{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.button:nth-child(1){
+    background: #fd0f0fd9;
+}
+
+.button:nth-child(2){
+    background: #170ffdd9;
+}
+
+.button:nth-child(3){
+    color: #000;
+    background: #0ffd0fd9;
+}
+
+.button-shadow{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-shadow .button:nth-child(1){
+    box-shadow: 0 6px 0 0 rgba(63, 5, 5, 0.851);
+}
+
+.button-shadow .button:nth-child(2){
+    box-shadow: 0 6px 0 0 rgba(5, 13, 63, 0.851);
+}
+
+.button-shadow .button:nth-child(3){
+    box-shadow: 0 6px 0 0 rgba(5, 63, 5, 0.851);
+}
+
+.button-click{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-click .button:active{
+    box-shadow: none;
+    transform: translateY(6px);
+}
+
+.button-style-change{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.button-style-change .button-double{
+    border: 4px #67c5ff double; 
+    background: none;
+    color: #67c5ff;
+    transition: .5s;
+}
+
+.button-style-change .button-double:hover{
+    background: #fffbef;
+    transition: .5s;
+}
+
+.button-style-change .button-dott{
+    border: 4px #67c5ff dotted;
+    background: none;
+    color: #67c5ff;
+}
+
+.button-style-change .button-dott:hover{
+    border: 4px #67c5ff dashed;
+}
+
+.button-style-change .button-background-none{
+    border: 4px #67c5ff dashed;
+    background: #d0edfff8;
+    color:  #67c5ff;
+    transition: .5s;
+}
+
+.button-style-change .button-background-none:hover{
+    background: #ffffff;
+    transition: .5s;
+}
